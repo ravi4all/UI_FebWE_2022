@@ -1,0 +1,36 @@
+Block Level Tag
+- div, h1...h6, form, table, ul, ol...
+- width is equal to screen and height depends on content
+
+Inline Level Tag
+- a, span, b, i, u, strong...
+- height and width is auto x auto
+
+Inline-Block Level Tag
+- img
+- there is width and height but appears in line
+
+
+Quotations
+- blockquote
+- cite
+- address
+List
+- ol
+- ul
+- dl
+Tables
+- tables
+Form Handling
+- text
+- password
+- select dropdown
+- radio button
+- checkbox
+
+
+
+
+
+
+

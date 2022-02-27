@@ -1,0 +1,45 @@
+UI - User Interface
+
+HTML 4
+1,2,3,4
+- Static
+
+W3 Standards
+
+Emmet - HTML and CSS Shorthand
+
+CSS 2
+1,2
+
+HTML 5 -> Javascript
+- Dynamic
+
+CSS 3
+- Media Queries
+
+SASS
+
+Tailwind CSS
+Bootstrap
+
+Javascript 
+
+HTML 5
+- Canvas
+- Localstorage
+- Web workers
+- Geolocation
+- Drag and Drop
+- Notifications
+
+Jquery
+
+
+
+
+
+
+
+
+
+
