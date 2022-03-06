@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Form Handling</h1>
+
+    <!-- method = get / post -->
+    <form action="#" method="get" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Enter your name</label>
+                </td>
+                <td>
+                    <input type="text" id="name" name="username">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pwd">Enter your Password</label>
+                </td>
+                <td>
+                    <input type="password" id="pwd" name="userpassword">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="city">Select City</label>
+                </td>
+                <td>
+                    <select name="city" id="city">
+                        <option>Select City</option>
+                        <!-- 
+                        <option value="mum">Mumbai</option>
+                        <option value="pune">Pune</option>
+                        <option value="noida">Noida</option>
+                        <option value="bh">Bhopal</option>
+                        <option value="sur">Surat</option> -->
+
+                        <optgroup label="Haryana">
+                            <option value="sonepat">Sonepat</option>
+                            <option value="panipat">Panipat</option>
+                            <option value="karnal">Karnal</option>
+                        </optgroup>
+
+                        <optgroup label="Uttar Pradesh">
+                            <option value="noida">Noida</option>
+                            <option value="gzb">Ghaziabad</option>
+                            <option value="meerut">Meerut</option>
+                        </optgroup>
+
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Gender</td>
+                <td>
+                    <!-- Unique Selection -->
+                    <input type="radio" id="m" name="gender" value="m">
+                    <label for="m">Male</label>
+
+                    <input type="radio" id="f" name="gender" value="f">
+                    <label for="f">Female</label>
+
+                    <input type="radio" id="o" name="gender" value="o">
+                    <label for="o">Others</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Select Course
+                </td>
+                <td>
+                    <input type="checkbox"> Btech
+                    <input type="checkbox"> Mtech
+                    <input type="checkbox"> BCA
+                    <input type="checkbox"> MCA
+                </td>
+            </tr>
+
+            <tr>
+                <td>Upload Picture</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Login Now...">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
