@@ -1,0 +1,11 @@
+/* 
+h2 - selector - on which tag or element CSS is applied
+{} - expression - where css is written
+color - property - what css I want to implement
+red - value - what is the value of the particular property 
+*/
+
+h2 {
+    color: blue !important;
+    text-align: right !important;
+}

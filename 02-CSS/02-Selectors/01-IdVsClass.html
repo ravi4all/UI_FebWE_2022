@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #section_1 {
+            background-color: lightblue;
+        }
+
+        #section_2 {
+            background-color: aqua;
+        }
+        .title {
+            text-align: center;
+            font-size: 30px;
+            color: red;
+        }
+        .primary-color {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ID Vs Class</h1>
+
+    <!-- Id - identity
+    - it is always unique
+    - a tag cannot have multiple IDs
+    - an ID cannot be used on multiple tags 
+    - represented by # -->
+
+    <!-- Class - Grouping
+    - it is used to group elements who look similar
+    - a tag can have multiple classes
+    - a class can be used any number of times 
+    - represented by . dot    -->
+
+    <div id="section_1" class="section">
+        <div class="wrapper">
+            <h2 class="title">This is a heading</h2>
+            <h2 class="primary-color">This is a heading</h2>
+            <h2>This is a heading</h2>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="section_2" class="section">
+        <div class="wrapper">
+            <h2 class="title primary-color">This is a heading</h2>
+            <h2>This is a heading</h2>
+            <h2>This is a heading</h2>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="section_3" class="section">
+        <div class="wrapper">
+            <h2 class="title primary-color">This is a heading</h2>
+            <h2>This is a heading</h2>
+            <h2>This is a heading</h2>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="section_4" class="section">
+        <h2 class="title">This is a heading</h2>
+        <h2>This is a heading</h2>
+        <h2 class="primary-color">This is a heading</h2>
+    </div>
+    
+</body>
+</html>
