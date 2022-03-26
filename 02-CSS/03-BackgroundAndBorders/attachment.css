@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+}
+div {
+    height: 740px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#div_1 {
+    background-image: url("https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&fit=crop");
+}
+
+#div_2 {
+    background-image: url("https://www.mercedes-benz.com/en/vehicles/passenger-cars/concept-cars/_jcr_content/image/MQ6-12-image-20200908114040/00-mercedes-benz-eq-concept-cars-2560x1440.jpeg");
+}
+
+#div_3 {
+    background-image: url("https://i.insider.com/592f4169b74af41b008b5977?width=700");
+}
+
+#div_4 {
+    background-image: url("http://prod-upp-image-read.ft.com/a4e8f394-313b-11ea-a329-0bcf87a328f2");
+}
+
+#div_5 {
+    background-image: url("https://stimg.cardekho.com/images/carexteriorimages/930x620/Lamborghini/Urus/4418/Lamborghini-Urus-V8/1621927166506/front-left-side-47.jpg");
+}
+
+#div_6 {
+    background-image: url("https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Thar/8076/1601635839903/front-left-side-47.jpg?impolicy=resize&imwidth=480");
+}
