@@ -1,0 +1,26 @@
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.row {
+    border: 1px solid red;
+}
+.col {
+    width: 40%;
+    padding: 10px;
+}
+.col-1 {
+    background-color: lightblue;
+    float: left;
+}
+
+.col-2 {
+    background-color: lightgray;
+    float: right;
+}
+
+/* .blank {
+    clear: both;
+} */
