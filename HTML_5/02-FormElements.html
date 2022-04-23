@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Form Elements</h1>
+
+    <form action="#">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input type="text" placeholder="Enter your name" required value="Ravi" readonly disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" placeholder="Enter your password" required value="1234" readonly>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter Email ID</td>
+                <td>
+                    <input type="email" placeholder="Enter your Email ID" autocomplete="off" autofocus>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter Age</td>
+                <td>
+                    <input type="number" min="18" max="50">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter DOB</td>
+                <td>
+                    <input type="date">
+                </td>
+                <td>
+                    <input type="time">
+                </td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+                <td>
+                    <input type="month">
+                </td>
+                <td>
+                    <input type="week">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Range</td>
+                <td>
+                    <!-- <input type="range" value="0"> -->
+                    <input type="range" value="100" min="100" max="10000" onchange="out.value=value" step="100">
+                </td>
+                <td>
+                    <output id="out">100</output>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Your Progress</td>
+                <td>
+                    <progress max="100" value="50"></progress>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter URL</td>
+                <td>
+                    <input type="url" placeholder="Enter URL">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Search Here</td>
+                <td>
+                    <input type="search" placeholder="Search Here...">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter Card Number</td>
+                <td>
+                    <input type="text" placeholder="Enter Card Number" pattern="[0-9]{4}[a-z|A-Z]{3,6}[!|@|#|$|%|^|&|*]{1}" title="Requested format is : 4 digits then 3 to 6 alphabets and then any 1 special character">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter Phone Number</td>
+                <td>
+                    <input type="tel" placeholder="Enter Phone Number">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter message</td>
+                <td>
+                    <textarea cols="20" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
