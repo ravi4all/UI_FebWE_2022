@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 500px;
+            width: 400px;
+            margin: 0 auto;
+            border: 2px solid red;
+            perspective: 500px;
+        }
+        div img {
+            width: 100%;
+            height: inherit;
+            /* transition-duration: 5s; */
+            /* backface-visibility: hidden; */
+        }
+        .img_1 {
+            transition-duration: 5s;
+            backface-visibility: hidden;
+        }
+        div:hover .img_1{
+            transform: rotateY(180deg);
+        }
+        .flip .img_2 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transition-duration: 5s;
+        }
+        .flip .img_2 {
+            transform: rotateY(180deg);
+            width: 100%;
+            z-index: -1;
+        }
+        .flip:hover .img_2 {
+            transform: rotateY(360deg);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flip Effect</h1>
+    <div class="flip">
+        <div class="img_1">
+            <img src="../../images/WebImages/dhoni_img.jpg" alt="">
+        </div>
+        <div class="img_2">
+            <!-- <img src="../../images/dhoni.jpg" alt=""> -->
+            <h2>This was the image of MS Dhoni</h2>
+        </div>
+    </div>
+    
+</body>
+</html>
