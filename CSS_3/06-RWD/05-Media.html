@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .col {
+            border: 1px solid red;
+            background-color: lightgray;
+            padding: 10px;
+            width: 22%;
+            margin-bottom: 20px;
+        }
+        @media (max-width:992px) {
+            .col {
+                width: 30%;
+            }
+        }
+
+        @media (max-width:768px) {
+            .col {
+                width: 46%;
+            }
+        }
+
+        @media (max-width:576px) {
+            .col {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Media Queries</h1>
+
+    <div class="row">
+        <div class="col col-1">
+            <h2>This is a heading</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatem pariatur porro aperiam dolorum dicta necessitatibus eligendi architecto! Sint rerum cupiditate molestias! Velit aut quasi ipsum qui laboriosam eos ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nihil quae assumenda nesciunt aperiam odio ad doloremque cum dolorem perspiciatis at vero reprehenderit minus suscipit excepturi, voluptatem, blanditiis fugit delectus.
+            </p>
+        </div>
+
+        <div class="col col-2">
+            <h2>This is a heading</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatem pariatur porro aperiam dolorum dicta necessitatibus eligendi architecto! Sint rerum cupiditate molestias! Velit aut quasi ipsum qui laboriosam eos ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nihil quae assumenda nesciunt aperiam odio ad doloremque cum dolorem perspiciatis at vero reprehenderit minus suscipit excepturi, voluptatem, blanditiis fugit delectus.
+            </p>
+        </div>
+
+        <div class="col col-3">
+            <h2>This is a heading</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatem pariatur porro aperiam dolorum dicta necessitatibus eligendi architecto! Sint rerum cupiditate molestias! Velit aut quasi ipsum qui laboriosam eos ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nihil quae assumenda nesciunt aperiam odio ad doloremque cum dolorem perspiciatis at vero reprehenderit minus suscipit excepturi, voluptatem, blanditiis fugit delectus.
+            </p>
+        </div>
+
+        <div class="col col-4">
+            <h2>This is a heading</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatem pariatur porro aperiam dolorum dicta necessitatibus eligendi architecto! Sint rerum cupiditate molestias! Velit aut quasi ipsum qui laboriosam eos ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nihil quae assumenda nesciunt aperiam odio ad doloremque cum dolorem perspiciatis at vero reprehenderit minus suscipit excepturi, voluptatem, blanditiis fugit delectus.
+            </p>
+        </div>
+
+        <div class="col col-5">
+            <h2>This is a heading</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatem pariatur porro aperiam dolorum dicta necessitatibus eligendi architecto! Sint rerum cupiditate molestias! Velit aut quasi ipsum qui laboriosam eos ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nihil quae assumenda nesciunt aperiam odio ad doloremque cum dolorem perspiciatis at vero reprehenderit minus suscipit excepturi, voluptatem, blanditiis fugit delectus.
+            </p>
+        </div>
+
+        <div class="col col-6">
+            <h2>This is a heading</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatem pariatur porro aperiam dolorum dicta necessitatibus eligendi architecto! Sint rerum cupiditate molestias! Velit aut quasi ipsum qui laboriosam eos ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nihil quae assumenda nesciunt aperiam odio ad doloremque cum dolorem perspiciatis at vero reprehenderit minus suscipit excepturi, voluptatem, blanditiis fugit delectus.
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

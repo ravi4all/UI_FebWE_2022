@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        #header {
+            background-color: #2874F0;
+            padding: 20px;
+        }
+        img {
+            width: 100%;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: 15% 60% 10%;
+            grid-template-areas: "logo nav login"
+                                 "logo search login";
+            justify-content: space-between;
+        }
+        .logo {
+            grid-area: logo;
+            border: 1px solid red;
+        }
+        #main-nav {
+            grid-area: nav;
+            border: 1px solid yellow;
+        }
+        #main-nav ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        .search {
+            grid-area: search;
+            border: 1px solid grey;
+        }
+        .search input[type="text"] {
+            width: 90%;
+        }
+        .login {
+            grid-area: login;
+            border: 1px solid lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Grid</h1>
+
+    <header id="header">
+        <div class="row">
+            <div class="col logo">
+                <a href="#">
+                    <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="logo">
+                </a>
+            </div>
+            <nav id="main-nav" class="col">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Electronics</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Furniture</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Men</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Women</a>
+                    </li>
+
+                    <li>
+                        <a href="#">More</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="login">
+                <a href="#">Login</a>
+            </div>
+            <div class="search">
+                <form action="#">
+                    <input type="text" placeholder="Search Here...">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </header>
+    
+</body>
+</html>
