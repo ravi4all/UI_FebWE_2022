@@ -1,0 +1,6 @@
+1. Download and Install Node.js
+2. Make a directory to store sass examples
+3. run command -> npm init
+4. run command -> npm install --save-dev sass
+5. Enter in package.json : "compile:sass" : "sass sass/utils.scss stylesheets/main.css"
+6. run command -> npm run compile:sass
