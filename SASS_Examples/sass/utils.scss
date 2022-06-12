@@ -1,6 +1,9 @@
+// SASS Variables
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
+$primary-color-hover: #333aaa;
 $bg-color : lightGreen;
+$nav-link-color: red;
 
 body {
   font: 100% $font-stack;
@@ -10,4 +13,88 @@ body {
 
 h1 {
     color: $primary-color;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+// Nested Rules
+#main-navigation {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      text-align: center;
+      margin: 0px 5px;
+      width: 100%;
+      position: relative;
+      a {
+        color: $nav-link-color;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px;
+        background-color: $primary-color;
+        display: block;
+        &:hover {
+          background-color: $primary-color-hover;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          border: 7px solid #fff;
+          border-color: #fff transparent transparent;
+          top: 20px;
+          right: 70px;
+        }
+      }
+    }
+  }
+}
+
+#main-navigation {
+  .dropdown {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.5s;
+    transform: scale(1,0);
+    transform-origin: top;
+    ul {
+      display: block;
+      li {
+        margin: 0px;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+#main-navigation {
+  ul {
+    li {
+      &:hover {
+        .dropdown {
+          transform: scale(1,1);
+        }
+      }
+    }
+  }
+}
+
+#banner {
+    font: {
+      family: $font-stack;
+      size: 20px;
+      weight: 600;
+      style: italic;
+  }
+}
+
+#about {
+  @extend #banner;
 }

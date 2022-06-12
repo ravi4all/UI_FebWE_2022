@@ -8,4 +8,69 @@ h1 {
   color: #333;
 }
 
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+#main-navigation ul {
+  display: flex;
+  justify-content: space-between;
+}
+#main-navigation ul li {
+  text-align: center;
+  margin: 0px 5px;
+  width: 100%;
+  position: relative;
+}
+#main-navigation ul li a {
+  color: red;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #333;
+  display: block;
+}
+#main-navigation ul li a:hover {
+  background-color: #333aaa;
+}
+#main-navigation ul li a::after {
+  content: "";
+  position: absolute;
+  border: 7px solid #fff;
+  border-color: #fff transparent transparent;
+  top: 20px;
+  right: 70px;
+}
+
+#main-navigation .dropdown {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  transition: 0.5s;
+  transform: scale(1, 0);
+  transform-origin: top;
+}
+#main-navigation .dropdown ul {
+  display: block;
+}
+#main-navigation .dropdown ul li {
+  margin: 0px;
+}
+#main-navigation .dropdown ul li a {
+  color: #fff;
+}
+
+#main-navigation ul li:hover .dropdown {
+  transform: scale(1, 1);
+}
+
+#banner, #about {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+}
+
 /*# sourceMappingURL=main.css.map */
