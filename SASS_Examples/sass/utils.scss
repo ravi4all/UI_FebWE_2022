@@ -1,9 +1,4 @@
-// SASS Variables
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
-$primary-color-hover: #333aaa;
-$bg-color : lightGreen;
-$nav-link-color: red;
+@import "variables";
 
 body {
   font: 100% $font-stack;
@@ -95,6 +90,16 @@ ul {
   }
 }
 
-#about {
-  @extend #banner;
+// #about {
+//   @extend #banner;
+// }
+
+div.#{$name} img {
+  width: 20%;
+}
+
+#banner p {
+  @if ($img-height > 5 and $img-height < 15) {
+      color: red;
+  }
 }
