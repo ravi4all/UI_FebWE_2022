@@ -1,0 +1,44 @@
+@mixin list-params {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+@mixin text-alignment($property, $value) {
+    #{$property} : $value;
+}
+
+// optional arguments
+@mixin img-placement($img, $x : 50%, $y : 50%) {
+    background : {
+        image : $img;
+        repeat : no-repeat;
+        position: $x $y;
+    }
+}
+
+@mixin flex-align($justify-content : center, $align : center, $wrap : wrap) {
+    align-items: $align;
+    flex-wrap: $wrap;
+    justify-content: $justify-content;
+    justify-items: center;
+}
+
+// Variable Length Arguments / Arbitrary Arguments
+@mixin positions($pos, $x...) {
+    position: $pos;
+    @for $var from 0 to length($x) {
+        // left: nth($list: $x, $n: $var + 1);
+        left: nth($x, $var + 1);
+        // top: nth($list: $x, $n: $var + 1);
+        // bottom: nth($list: $x, $n: $var + 1);
+    }
+}
+
+@function space_calc($base, $x) {
+    $result : 1;
+    @for $var from 1 through $x {
+        $result : $base * $x;
+    }
+    @return $result;
+}
