@@ -1,0 +1,61 @@
+body {
+    overflow-x: hidden;
+    /* background-color: aqua; */
+}
+
+#section_1 .col-md-6{
+    perspective: 800px;
+}
+
+.image {
+    height: 100vh;
+    transition-duration: 2s;
+    transform-origin: left;
+}
+.image img {
+    height: inherit;
+    object-fit: cover;
+}
+
+.desc {
+    background-color: #EF5B5B;
+    height: 100vh;
+    transition-duration: 2s;
+    transform-origin: right;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc .text {
+    background-image: url("https://thumbs.gfycat.com/AbandonedAnguishedCatfish-size_restricted.gif");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+}
+
+.desc .text:after {
+    /* content: ""; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    left: 0px;
+    top: 0px;
+}
+
+.desc h2 {
+    font-family: 'Bungee', cursive;
+    font-size: 5em;
+    width: 100%;
+}
+
+#section_1:hover .image {
+    transform: rotateY(180deg);
+}
+
+#section_1:hover .desc {
+    transform: rotateY(-180deg);
+}
