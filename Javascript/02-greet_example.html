@@ -5,23 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <script>
+        function greet() {
+            // alert("Greet Executed...");
+            var username = document.getElementById("box");
+            document.getElementById("output").innerHTML = username.value;
+            username.value = "";
+        }
+    </script> -->
+    <script src="greet.js"></script>
 </head>
 <body>
 
     <h1>Greet Example</h1>
 
     <input type="text" id="box" placeholder="Enter your name">
-    <button onclick="greet()">Click Here...</button>
+    <!-- <button onclick="greet()">Click Here...</button> -->
+    <button id="btn">Click Here</button>
 
     <h2 id="title">Welcome <span id="output"></span></h2>
 
-    <script>
+    <!-- <script>
         function greet() {
             // alert("Greet Executed...");
-            var username = document.getElementById("box").value;
-            document.getElementById("output").innerHTML = username;
+            var username = document.getElementById("box");
+            document.getElementById("output").innerHTML = username.value;
+            username.value = "";
         }
-    </script>
+    </script> -->
     
+    <!-- <script src="greet.js"></script> -->
 </body>
 </html>
