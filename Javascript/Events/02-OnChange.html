@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>OnChange Event</h1>
+    <p>
+        <b>Will only work when we change value of textbox</b>
+    </p>
+
+    <input type="text" onchange="validate(this)">
+    <span id="output"></span>
+    
+    <script>
+        function validate(obj) {
+            var username = obj.value;
+            console.log(username);
+            var span = document.querySelector("#output")
+            if(username == "") {
+                span.innerHTML = "Please Fill Your Name...";
+                obj.style.border = "1px solid red";
+            }
+            else {
+                span.innerHTML = "";
+                obj.style.border = "1px solid green";
+            }
+        }
+    </script>
+</body>
+</html>
